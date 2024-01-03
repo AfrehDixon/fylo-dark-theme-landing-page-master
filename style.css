@@ -1,0 +1,300 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Poppins:wght@200;500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;700&family=Poppins:wght@200;500&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+}
+body{
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    background: hsl(217, 28%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+li{
+    list-style: none;
+    margin: 0 20px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+.banner-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.banner-content > h3{
+    font-size: 30px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.banner-content> p{
+font-size: large;
+margin: 1rem;
+justify-content: center;
+align-items: center;
+display: flex;
+width: 700px;
+}
+
+button{
+    padding: 10px 45px;
+    background: hsl(176, 68%, 64%);
+    border-radius: 30px;
+    margin-top: 15px;
+}
+/* 
+@media screen and (max-width: 377px){
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 90%;
+        max-width: 375px;
+        color: yellow;
+    }
+        .banner-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            color: red;
+        }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        color: yellow;
+    }
+
+    
+} */
+.about{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+
+}
+.about  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.about div > h3{
+    font-size: 30px;
+    width: 500px;
+    margin: 0 auto;;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.about div > p{
+    margin: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 2;
+}
+
+.productive{
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 7rem;
+}
+.productive-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productive-content h3{
+    font-size: 30px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.productive-content p{
+    margin: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 2;
+    /* width: 500px; */
+}
+.productive-content a{
+    text-decoration: underline;
+    color: hsl(176, 68%, 64%);
+    font-weight: bold;
+    align-self: flex-start;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.testimonial{
+    /* border: 1px solid hsl(176, 68%, 64%); */
+    padding: 20px;
+    outline: none;
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 10px;
+    line-height: 2;
+}
+.testimonial-content{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.testimonial-content img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.testimonial-content div{
+    margin-left: 10px;
+}
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    background-color: hsl(219, 30%, 18%);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.get-started-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.get-started-content h3{
+    font-size: 30px;
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.get-started-content p{
+    margin: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 2;
+    /* width: 500px; */
+}
+
+.get-started-form{
+   display: grid;
+   grid-template-columns: 4fr 2fr;
+   gap: 10px;
+
+}
+
+.get-started-form input{
+    height: 40px;
+    padding: 10px 45px;
+    border-radius: 50px;
+    outline: none;
+
+}
+.get-started-form button{
+    background: hsl(176, 68%, 64%);
+    border-radius: 30px;
+    font-weight: bold;
+   
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7rem;
+    background-color: hsl(216, 53%, 9%);
+    padding: 2rem;
+    border-radius: 10px;
+    line-height: 1.9;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+   
+}
+.footer-logo{
+    width: 300px;
+    line-height: 2;
+    
+}
+.footer-links{
+    display: flex;
+}
